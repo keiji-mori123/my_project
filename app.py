@@ -175,6 +175,6 @@ def delete(id):
     return redirect("/")    
 
 #以下は、デバックモードをオンに強制的に行うもの。違うやり方は、「cmd」に「set FLASK_ENV=development」と入力して実行することで
-#自動でデバッグモードが有効になるらしい。
+#自動でデバッグモードが有効になるらしい。※本番環境にデプロイする際は、Falseに設定のこと。
 if __name__ == "__main__":
     app.run(debug=True)
